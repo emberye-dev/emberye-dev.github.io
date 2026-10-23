@@ -1,0 +1,67 @@
+# 站点基础配置
+baseURL: "https://emberye-dev.github.io/"
+locale: "zh-cn"
+title: "Emberye"
+theme: "PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+pagination:
+  pagerSize: 10
+
+# PaperMod 的极简输出配置
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: "Emberye"
+  description: "数字媒体技术学生，探索 AI 应用、智能系统与计算机技术。"
+  keywords: [Blog, AI, Hugo, 计算机, 数字媒体技术]
+  author: "陈烨"
+  DateFormat: "2006-01-02"
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowToc: true
+  TocOpen: false
+  UseHugoToc: true
+
+  # 首页自我介绍
+  homeInfoParams:
+    Title: "你好，我是陈烨"
+    Content: "数字媒体技术学生，探索 AI 应用、智能系统与计算机技术。这里记录我做过的项目、遇到并解决的问题，以及持续学习的轨迹。"
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/emberye-dev"
+
+menu:
+  main:
+    - identifier: posts
+      name: 文章
+      url: /posts/
+      weight: 10
+    - identifier: archives
+      name: 归档
+      url: /archives/
+      weight: 20
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 30
+
+outputs:
+  home:
+    - HTML
+    - RSS

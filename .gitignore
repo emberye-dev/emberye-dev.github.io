@@ -1,0 +1,9 @@
+# 构建产物，不需要提交
+public/
+resources/_gen/
+.hugo_build.lock
+
+# 编辑器 / 系统
+.DS_Store
+Thumbs.db
+.vscode/
